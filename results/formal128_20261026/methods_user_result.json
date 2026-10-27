@@ -1,0 +1,25 @@
+{
+  "action": "evaluate_methods_only",
+  "training_started": false,
+  "study_identity": "af52b1e39c0617fcd9227da4cb224b7812bc052166038d922100f33e173cb915",
+  "results": [
+    {
+      "arm": "adaptive",
+      "benchmark": "math500",
+      "run_id": "e8255e8c485dc91510488e402bd5a06c",
+      "accuracy": 0.7,
+      "count": 500,
+      "process_seconds_this_invocation": 8228.960740220002,
+      "reused_complete": false
+    },
+    {
+      "arm": "u2",
+      "benchmark": "math500",
+      "run_id": "a0876fd216f2d6a4256ca40340619db8",
+      "accuracy": 0.69,
+      "count": 500,
+      "process_seconds_this_invocation": 7937.431664665999,
+      "reused_complete": false
+    }
+  ]
+}

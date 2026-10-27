@@ -1,0 +1,162 @@
+{
+  "ast_checks": [
+    {
+      "source": "src/gstar_opd/opd/objective.py",
+      "target": "src/gstar_opd_formal/opd/objective.py",
+      "definitions": [
+        "CandidateTargets",
+        "MaskedCandidateBatch",
+        "make_candidate_targets",
+        "compute_candidate_advantages",
+        "compute_clipped_opd_loss",
+        "compute_masked_clipped_opd_loss",
+        "select_candidate_targets",
+        "stable_log_softmax",
+        "validate_logit_pair",
+        "validate_candidate_shapes",
+        "validate_candidate_targets",
+        "validate_current_log_probs",
+        "require_log_probs",
+        "require_finite"
+      ],
+      "all_definition_bodies_identical": true,
+      "different": [],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    },
+    {
+      "source": "src/gstar_opd/opd/probabilities.py",
+      "target": "src/gstar_opd_formal/opd/probabilities.py",
+      "definitions": [
+        "project_log_probs_chunk",
+        "projected_selected_log_probs",
+        "select_log_probs_chunk",
+        "selected_log_probs"
+      ],
+      "all_definition_bodies_identical": true,
+      "different": [],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    },
+    {
+      "source": "src/gstar_opd/opd/streaming.py",
+      "target": "src/gstar_opd_formal/opd/streaming.py",
+      "definitions": [
+        "native_teacher_trajectory",
+        "causal_parts",
+        "response_hidden_states",
+        "project_targets",
+        "sampled_log_probs",
+        "check_streamed_likelihood",
+        "score_streamed_batch"
+      ],
+      "all_definition_bodies_identical": false,
+      "different": [
+        "native_teacher_trajectory"
+      ],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    },
+    {
+      "source": "src/gstar_opd/opd/signals.py",
+      "target": "src/gstar_opd_formal/opd/signals.py",
+      "definitions": [
+        "BoundarySignals",
+        "BoundaryBatch",
+        "compute_boundary_signals",
+        "compute_utilization",
+        "validate_boundary_batch",
+        "validate_response_lengths"
+      ],
+      "all_definition_bodies_identical": true,
+      "different": [],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    },
+    {
+      "source": "src/gstar_opd/opd/engine.py",
+      "target": "src/gstar_opd_formal/opd/engine.py",
+      "definitions": [
+        "EngineSpec",
+        "ScoredTrajectory",
+        "StreamingEngineSpec",
+        "UpdateResult",
+        "move_candidate_targets",
+        "score_trajectory",
+        "summarize_boundary",
+        "OpdEngine"
+      ],
+      "all_definition_bodies_identical": false,
+      "different": [
+        "OpdEngine"
+      ],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    },
+    {
+      "source": "src/gstar_opd_reuse/opd/objective.py",
+      "target": "src/gstar_opd_formal/opd/reuse_objective.py",
+      "definitions": [
+        "WeightedCandidates",
+        "prefix_weights",
+        "weighted_candidate_loss"
+      ],
+      "all_definition_bodies_identical": true,
+      "different": [],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    },
+    {
+      "source": "src/gstar_opd_reuse/opd/state.py",
+      "target": "src/gstar_opd_formal/opd/reuse_state.py",
+      "definitions": [
+        "trajectory_on",
+        "validate_trajectory",
+        "PendingBatch"
+      ],
+      "all_definition_bodies_identical": true,
+      "different": [],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    },
+    {
+      "source": "src/gstar_opd_reuse/opd/engine.py",
+      "target": "src/gstar_opd_formal/opd/reuse_engine.py",
+      "definitions": [
+        "ReuseEngine",
+        "chosen_probabilities",
+        "refresh_targets"
+      ],
+      "all_definition_bodies_identical": true,
+      "different": [],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    },
+    {
+      "source": "src/gstar_opd/controllers/policies.py",
+      "target": "src/gstar_opd_formal/controllers/adaptive.py",
+      "definitions": [
+        "AdaptivePolicySpec",
+        "HorizonObservation",
+        "AdaptiveHorizonPolicy",
+        "compute_badness",
+        "clamp_signal_probability",
+        "update_ema",
+        "validate_horizons",
+        "validate_positive_integer",
+        "validate_positive_finite",
+        "validate_unit_interval",
+        "validate_state_identity",
+        "read_horizon_index",
+        "read_vector",
+        "read_optional_nonnegative"
+      ],
+      "all_definition_bodies_identical": true,
+      "different": [],
+      "all_definition_bodies_identical_after_namespace_relocation": true,
+      "different_after_relocation": []
+    }
+  ],
+  "scope": "Mathematical definition ASTs unchanged after namespace relocation; real CPU loss/gradient/Adam and method integration tests separately reported. No CUDA equivalence or accuracy claim.",
+  "all_normalized_AST_checks_pass": true
+}

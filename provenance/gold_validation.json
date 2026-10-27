@@ -1,0 +1,11 @@
+{
+  "count": 1447,
+  "self_gold_failures": [],
+  "minerva_symbolic_fallback_ids": [
+    "minerva_math:5",
+    "minerva_math:27",
+    "minerva_math:38",
+    "minerva_math:49",
+    "minerva_math:269"
+  ]
+}

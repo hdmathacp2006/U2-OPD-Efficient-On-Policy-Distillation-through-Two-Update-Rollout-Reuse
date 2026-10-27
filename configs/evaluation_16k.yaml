@@ -1,0 +1,14 @@
+seed: 20261021
+temperature: 0.7
+top_p: 0.95
+max_new_tokens: 16384
+max_prompt_tokens: 1280
+maximum_model_length: 17664
+concurrency: 2
+cache_bytes: 12884901888
+maximum_batched_tokens: 2048
+commit_questions: 8
+drain_margin_seconds: 180
+flush_margin_seconds: 60
+segment_seconds: 14400
+samples_per_question: 1

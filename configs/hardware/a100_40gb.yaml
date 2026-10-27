@@ -1,0 +1,4 @@
+profile: A100
+minimum_memory_gib: 38
+training: true
+evaluation: true

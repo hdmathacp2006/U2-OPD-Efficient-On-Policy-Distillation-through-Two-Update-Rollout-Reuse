@@ -1,0 +1,7 @@
+{
+  "schema": "zero_update_adapter_v1",
+  "path": "assets/initialization/initial_adapter.safetensors",
+  "sha256": "1e56af3faad631db254d7d54fb67c775a32cb9b9bed39b10907ae6ba0457d787",
+  "adapter_identity": "3c4f265eeb4ae1581dcb86ea0de50cf3f0477c9cb2eb844f0a5317dce27b8e9b",
+  "completed_updates": 0
+}

@@ -1,0 +1,16 @@
+{
+  "action": "evaluate_base_only",
+  "training_started": false,
+  "study_identity": "af52b1e39c0617fcd9227da4cb224b7812bc052166038d922100f33e173cb915",
+  "results": [
+    {
+      "arm": "base",
+      "benchmark": "math500",
+      "run_id": "cc0f95573945b83711668bf97df40de0",
+      "accuracy": 0.684,
+      "count": 500,
+      "process_seconds_this_invocation": 12051.104445987,
+      "reused_complete": false
+    }
+  ]
+}

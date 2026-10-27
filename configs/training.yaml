@@ -1,0 +1,51 @@
+batch_size: 4
+generation_batch_size: 4
+teacher_scoring_batch_size: 1
+scoring_chunk_rows: 128
+learning_rate: 1.0e-06
+weight_decay: 0.0
+max_grad_norm: 1.0
+max_prompt_tokens: 1024
+attention_backend: flash_attention_2
+gradient_checkpointing: true
+opd:
+  candidate_top_k: 16
+  clip_surrogate: ppo_dual_clip
+  clip_ratio: 0.2
+  clip_ratio_provenance: local_choice_from_verl_default_not_reported_by_adaptive_fastopd
+  baseline_floor_epsilon: 1.0e-06
+  baseline_floor_provenance: local_numerical_choice_not_reported_by_adaptive_fastopd
+  extra_kl_regularization: false
+  dual_clip_ratio: 3.0
+  log_ratio_limit: 20.0
+  dual_clip_provenance: Rethinking_OPD_verl_convention_not_reported_in_Adaptive_FastOPD
+horizons:
+  choices:
+  - 1024
+  - 2048
+  - 3072
+  - 4096
+  - 5120
+  - 6144
+  - 7168
+  - 8192
+  initial: 1024
+  increment: 1024
+  maximum: 8192
+adaptive_policy:
+  baseline_observations: 3
+  ema_beta: 0.8
+  plateau_patience: 5
+  baseline_floor: 1.0e-06
+  hit_threshold: 0.1
+  reach_threshold: 0.3
+rollout:
+  backend: vllm
+  maximum_model_length: 9216
+  cache_bytes: 5368709120
+  maximum_sequences: 4
+  logprob_tolerance: 0.1
+  logprob_warning_threshold: 0.02
+  residency: sleep_before_hf
+  maximum_batched_tokens: 2048
+  free_memory_fraction: 0.12

@@ -1,0 +1,3 @@
+name: adaptive
+updates_per_fresh_batch: 1
+label: Adaptive FastOPD adapted

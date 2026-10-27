@@ -1,0 +1,35 @@
+{
+  "schema": "formal_prompt_capacity_v1",
+  "student_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "maxima": {
+    "math500": 815,
+    "minerva_math": 416,
+    "olympiadbench": 1277,
+    "training": 186,
+    "dev": 169
+  },
+  "token_records_sha256": "95b8727d0a40d149e220dcb43af3fdfa2c2cdb52e55a2af5a954937aa34365bd",
+  "config": {
+    "seed": 20261021,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "max_new_tokens": 31744,
+    "max_prompt_tokens": 1280,
+    "maximum_model_length": 33024,
+    "concurrency": 2,
+    "cache_bytes": 12884901888,
+    "maximum_batched_tokens": 2048,
+    "commit_questions": 8,
+    "drain_margin_seconds": 180,
+    "flush_margin_seconds": 60,
+    "segment_seconds": 14400,
+    "samples_per_question": 1
+  },
+  "capacity": {
+    "bf16_kv_bytes_per_token": 114688,
+    "worst_case_batch_kv_bytes": 7574913024,
+    "cache_bytes": 12884901888,
+    "scope": "analytic_KV_only_not_total_device_peak"
+  },
+  "benchmark_questions_truncated": 0
+}

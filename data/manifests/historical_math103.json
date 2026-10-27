@@ -1,0 +1,568 @@
+{
+  "schema": "math103_nested_coverage_v1",
+  "source_sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+  "source_count": 500,
+  "count": 103,
+  "rule": "first_min_3_population_per_cell_by_frozen_independent_hash",
+  "source_indices": [
+    4,
+    14,
+    18,
+    28,
+    31,
+    34,
+    35,
+    37,
+    41,
+    58,
+    65,
+    68,
+    76,
+    79,
+    85,
+    102,
+    109,
+    111,
+    122,
+    127,
+    129,
+    133,
+    139,
+    141,
+    142,
+    144,
+    157,
+    158,
+    177,
+    178,
+    182,
+    185,
+    204,
+    206,
+    207,
+    209,
+    222,
+    225,
+    226,
+    230,
+    242,
+    243,
+    244,
+    254,
+    259,
+    260,
+    262,
+    267,
+    269,
+    276,
+    277,
+    279,
+    281,
+    282,
+    283,
+    287,
+    295,
+    297,
+    300,
+    301,
+    303,
+    307,
+    309,
+    314,
+    315,
+    320,
+    325,
+    338,
+    340,
+    343,
+    345,
+    349,
+    352,
+    358,
+    362,
+    364,
+    370,
+    375,
+    378,
+    387,
+    389,
+    392,
+    394,
+    403,
+    404,
+    406,
+    409,
+    417,
+    421,
+    427,
+    431,
+    438,
+    444,
+    456,
+    463,
+    464,
+    465,
+    476,
+    482,
+    484,
+    485,
+    487,
+    490
+  ],
+  "example_ids": [
+    "test/algebra/1349.json",
+    "test/precalculus/1303.json",
+    "test/geometry/434.json",
+    "test/precalculus/779.json",
+    "test/prealgebra/1302.json",
+    "test/counting_and_probability/119.json",
+    "test/number_theory/627.json",
+    "test/geometry/967.json",
+    "test/geometry/627.json",
+    "test/algebra/722.json",
+    "test/prealgebra/1747.json",
+    "test/precalculus/1313.json",
+    "test/intermediate_algebra/623.json",
+    "test/prealgebra/192.json",
+    "test/geometry/353.json",
+    "test/intermediate_algebra/431.json",
+    "test/precalculus/44.json",
+    "test/counting_and_probability/23957.json",
+    "test/algebra/1332.json",
+    "test/number_theory/847.json",
+    "test/geometry/1140.json",
+    "test/prealgebra/1807.json",
+    "test/intermediate_algebra/1151.json",
+    "test/number_theory/612.json",
+    "test/counting_and_probability/159.json",
+    "test/precalculus/43.json",
+    "test/intermediate_algebra/1410.json",
+    "test/algebra/2570.json",
+    "test/geometry/65.json",
+    "test/prealgebra/1113.json",
+    "test/prealgebra/1922.json",
+    "test/algebra/1214.json",
+    "test/intermediate_algebra/1510.json",
+    "test/precalculus/541.json",
+    "test/counting_and_probability/389.json",
+    "test/number_theory/234.json",
+    "test/geometry/547.json",
+    "test/algebra/2159.json",
+    "test/counting_and_probability/71.json",
+    "test/intermediate_algebra/986.json",
+    "test/algebra/2626.json",
+    "test/geometry/254.json",
+    "test/prealgebra/1251.json",
+    "test/counting_and_probability/1009.json",
+    "test/intermediate_algebra/149.json",
+    "test/precalculus/580.json",
+    "test/prealgebra/1317.json",
+    "test/geometry/226.json",
+    "test/counting_and_probability/913.json",
+    "test/algebra/1282.json",
+    "test/prealgebra/1834.json",
+    "test/prealgebra/1512.json",
+    "test/prealgebra/260.json",
+    "test/algebra/1184.json",
+    "test/prealgebra/1787.json",
+    "test/number_theory/631.json",
+    "test/precalculus/1201.json",
+    "test/number_theory/1172.json",
+    "test/counting_and_probability/339.json",
+    "test/prealgebra/1044.json",
+    "test/geometry/965.json",
+    "test/precalculus/695.json",
+    "test/number_theory/203.json",
+    "test/geometry/1108.json",
+    "test/algebra/791.json",
+    "test/geometry/947.json",
+    "test/geometry/73.json",
+    "test/number_theory/368.json",
+    "test/precalculus/801.json",
+    "test/counting_and_probability/737.json",
+    "test/algebra/1529.json",
+    "test/counting_and_probability/238.json",
+    "test/precalculus/1281.json",
+    "test/intermediate_algebra/860.json",
+    "test/counting_and_probability/14.json",
+    "test/intermediate_algebra/690.json",
+    "test/precalculus/1289.json",
+    "test/number_theory/427.json",
+    "test/prealgebra/1743.json",
+    "test/algebra/849.json",
+    "test/geometry/795.json",
+    "test/precalculus/902.json",
+    "test/intermediate_algebra/1791.json",
+    "test/number_theory/928.json",
+    "test/counting_and_probability/761.json",
+    "test/number_theory/132.json",
+    "test/intermediate_algebra/1797.json",
+    "test/algebra/776.json",
+    "test/precalculus/1202.json",
+    "test/algebra/2743.json",
+    "test/precalculus/499.json",
+    "test/number_theory/255.json",
+    "test/counting_and_probability/731.json",
+    "test/intermediate_algebra/1102.json",
+    "test/algebra/1425.json",
+    "test/intermediate_algebra/834.json",
+    "test/number_theory/72.json",
+    "test/prealgebra/1252.json",
+    "test/number_theory/1090.json",
+    "test/intermediate_algebra/101.json",
+    "test/counting_and_probability/199.json",
+    "test/number_theory/239.json",
+    "test/intermediate_algebra/1350.json"
+  ],
+  "strata": [
+    {
+      "subject": "Algebra",
+      "level": 1,
+      "population_count": 17,
+      "source_indices": [
+        58,
+        185,
+        387
+      ]
+    },
+    {
+      "subject": "Algebra",
+      "level": 2,
+      "population_count": 21,
+      "source_indices": [
+        4,
+        427,
+        463
+      ]
+    },
+    {
+      "subject": "Algebra",
+      "level": 3,
+      "population_count": 26,
+      "source_indices": [
+        122,
+        225,
+        345
+      ]
+    },
+    {
+      "subject": "Algebra",
+      "level": 4,
+      "population_count": 30,
+      "source_indices": [
+        158,
+        282,
+        315
+      ]
+    },
+    {
+      "subject": "Algebra",
+      "level": 5,
+      "population_count": 30,
+      "source_indices": [
+        242,
+        276,
+        417
+      ]
+    },
+    {
+      "subject": "Counting & Probability",
+      "level": 1,
+      "population_count": 2,
+      "source_indices": [
+        362,
+        404
+      ]
+    },
+    {
+      "subject": "Counting & Probability",
+      "level": 2,
+      "population_count": 7,
+      "source_indices": [
+        207,
+        343,
+        485
+      ]
+    },
+    {
+      "subject": "Counting & Probability",
+      "level": 3,
+      "population_count": 4,
+      "source_indices": [
+        111,
+        226,
+        269
+      ]
+    },
+    {
+      "subject": "Counting & Probability",
+      "level": 4,
+      "population_count": 13,
+      "source_indices": [
+        34,
+        300,
+        349
+      ]
+    },
+    {
+      "subject": "Counting & Probability",
+      "level": 5,
+      "population_count": 12,
+      "source_indices": [
+        142,
+        254,
+        444
+      ]
+    },
+    {
+      "subject": "Geometry",
+      "level": 1,
+      "population_count": 2,
+      "source_indices": [
+        18,
+        267
+      ]
+    },
+    {
+      "subject": "Geometry",
+      "level": 2,
+      "population_count": 8,
+      "source_indices": [
+        243,
+        314,
+        325
+      ]
+    },
+    {
+      "subject": "Geometry",
+      "level": 3,
+      "population_count": 8,
+      "source_indices": [
+        37,
+        177,
+        389
+      ]
+    },
+    {
+      "subject": "Geometry",
+      "level": 4,
+      "population_count": 10,
+      "source_indices": [
+        41,
+        85,
+        222
+      ]
+    },
+    {
+      "subject": "Geometry",
+      "level": 5,
+      "population_count": 13,
+      "source_indices": [
+        129,
+        303,
+        320
+      ]
+    },
+    {
+      "subject": "Intermediate Algebra",
+      "level": 1,
+      "population_count": 7,
+      "source_indices": [
+        102,
+        259,
+        456
+      ]
+    },
+    {
+      "subject": "Intermediate Algebra",
+      "level": 2,
+      "population_count": 12,
+      "source_indices": [
+        76,
+        157,
+        358
+      ]
+    },
+    {
+      "subject": "Intermediate Algebra",
+      "level": 3,
+      "population_count": 19,
+      "source_indices": [
+        139,
+        464,
+        484
+      ]
+    },
+    {
+      "subject": "Intermediate Algebra",
+      "level": 4,
+      "population_count": 23,
+      "source_indices": [
+        230,
+        364,
+        409
+      ]
+    },
+    {
+      "subject": "Intermediate Algebra",
+      "level": 5,
+      "population_count": 36,
+      "source_indices": [
+        204,
+        394,
+        490
+      ]
+    },
+    {
+      "subject": "Number Theory",
+      "level": 1,
+      "population_count": 5,
+      "source_indices": [
+        141,
+        406,
+        487
+      ]
+    },
+    {
+      "subject": "Number Theory",
+      "level": 2,
+      "population_count": 10,
+      "source_indices": [
+        35,
+        209,
+        438
+      ]
+    },
+    {
+      "subject": "Number Theory",
+      "level": 3,
+      "population_count": 16,
+      "source_indices": [
+        127,
+        309,
+        338
+      ]
+    },
+    {
+      "subject": "Number Theory",
+      "level": 4,
+      "population_count": 19,
+      "source_indices": [
+        297,
+        403,
+        465
+      ]
+    },
+    {
+      "subject": "Number Theory",
+      "level": 5,
+      "population_count": 12,
+      "source_indices": [
+        287,
+        375,
+        482
+      ]
+    },
+    {
+      "subject": "Prealgebra",
+      "level": 1,
+      "population_count": 7,
+      "source_indices": [
+        65,
+        79,
+        262
+      ]
+    },
+    {
+      "subject": "Prealgebra",
+      "level": 2,
+      "population_count": 19,
+      "source_indices": [
+        178,
+        182,
+        476
+      ]
+    },
+    {
+      "subject": "Prealgebra",
+      "level": 3,
+      "population_count": 17,
+      "source_indices": [
+        133,
+        283,
+        378
+      ]
+    },
+    {
+      "subject": "Prealgebra",
+      "level": 4,
+      "population_count": 20,
+      "source_indices": [
+        31,
+        277,
+        281
+      ]
+    },
+    {
+      "subject": "Prealgebra",
+      "level": 5,
+      "population_count": 19,
+      "source_indices": [
+        244,
+        279,
+        301
+      ]
+    },
+    {
+      "subject": "Precalculus",
+      "level": 1,
+      "population_count": 3,
+      "source_indices": [
+        14,
+        144,
+        370
+      ]
+    },
+    {
+      "subject": "Precalculus",
+      "level": 2,
+      "population_count": 13,
+      "source_indices": [
+        28,
+        206,
+        307
+      ]
+    },
+    {
+      "subject": "Precalculus",
+      "level": 3,
+      "population_count": 15,
+      "source_indices": [
+        260,
+        295,
+        340
+      ]
+    },
+    {
+      "subject": "Precalculus",
+      "level": 4,
+      "population_count": 13,
+      "source_indices": [
+        68,
+        352,
+        431
+      ]
+    },
+    {
+      "subject": "Precalculus",
+      "level": 5,
+      "population_count": 12,
+      "source_indices": [
+        109,
+        392,
+        421
+      ]
+    }
+  ],
+  "scope": "expanded_development_panel_not_untouched_confirmation"
+}

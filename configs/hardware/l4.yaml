@@ -1,0 +1,4 @@
+profile: L4
+minimum_memory_gib: 22
+training: false
+evaluation: true

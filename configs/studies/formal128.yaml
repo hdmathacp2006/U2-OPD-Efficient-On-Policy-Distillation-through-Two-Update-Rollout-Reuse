@@ -1,0 +1,21 @@
+schema: opd_formal_v1
+seed: 20261019
+arms:
+- adaptive
+- u2
+updates: 128
+training_pool: 1024
+dev_count: 128
+checkpoint_interval: 32
+retained_updates:
+- 128
+segment_seconds: 14400
+checkpoint_margin_seconds: 180
+benchmarks:
+  math500: 500
+  minerva_math: 272
+eval_arms:
+- base
+- adaptive
+- u2
+drive_root_id: local-root

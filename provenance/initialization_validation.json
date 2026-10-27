@@ -1,0 +1,6 @@
+{
+  "tensors": 392,
+  "lora_B_tensors": 196,
+  "all_B_zero": true,
+  "base_reference": "untouched_pinned_Qwen3_weights; zero_update_LoRA_has_zero_effect"
+}

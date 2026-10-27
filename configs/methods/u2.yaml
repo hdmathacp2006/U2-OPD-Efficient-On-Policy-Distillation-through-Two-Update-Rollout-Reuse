@@ -1,0 +1,5 @@
+name: u2
+updates_per_fresh_batch: 2
+prefix_cap: 4.0
+teacher_cache: full_forward_rescore
+estimator: biased_capped_geometric_prefix_stabilizer
