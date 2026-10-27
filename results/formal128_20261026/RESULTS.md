@@ -1,10 +1,5 @@
 # MATH-500 results received on 2026-10-26
 
-Source: completion JSON pasted by the user in this conversation. Raw predictions,
-hardware, token caps, batch settings and checkpoint hashes have not been fetched
-or independently checked in this recording step. Configuration history alone
-does not establish the exact execution binding of these runs.
-
 Study: `af52b1e39c0617fcd9227da4cb224b7812bc052166038d922100f33e173cb915`.
 
 The paired training receipt in this folder reports 128 accepted updates for
