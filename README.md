@@ -2,7 +2,7 @@
 
 This repository contains the standalone formal comparison between an adapted Adaptive FastOPD baseline and **original U2-OPD**. Both methods distill from a fixed Nemotron-Cascade-8B-Thinking teacher into a Qwen3-0.6B student. U2 uses one fresh on-policy update followed by at most one refreshed off-policy update on the same student response. No teacher-generated solutions or correctness reward enter the training objective. See [methods](docs/METHODS.md).
 
-The research code, pinned input manifests, zero-update LoRA adapter, dependency locks, and tests are included. Model weights are downloaded from their pinned upstream revisions. Published **trained** checkpoints are not included: a new user can run both arms from initialization, but cannot evaluate the original checkpoints without obtaining those checkpoint bytes separately. The original reported aggregates and their evidence limitations are in [results](results/formal128_20261026/RESULTS.md).
+The research code, pinned input manifests, zero-update LoRA adapter, and dependency locks are included. Model weights are downloaded from their pinned upstream revisions. Published **trained** checkpoints are not included: a new user can run both arms from initialization, but cannot evaluate the original checkpoints without obtaining those checkpoint bytes separately. The original reported aggregates and their evidence limitations are in [results](results/formal128_20261026/RESULTS.md).
 
 ## Requirements
 
@@ -61,10 +61,10 @@ modal run scripts/modal_portable.py --action evaluate-methods
 modal run scripts/modal_portable.py --action evaluate-base
 ```
 
-These commands create a `u2-opd-artifacts` Volume **in your Modal account**. Setup runs in a CPU container; training and methods evaluation request A100, while base evaluation requests L4. GPU actions can incur charges. The Volume stores the pinned worker environment, model cache, checkpoint objects and receipts. To resume a stopped action, run it again with `--resume-stopped` only after confirming the prior function is no longer active. The Modal entrypoint has not been GPU-executed as part of this repository publication; its CPU preflight and local storage tests do not replace an end-to-end Modal run.
+These commands create a `u2-opd-artifacts` Volume **in your Modal account**. Setup runs in a CPU container; training and methods evaluation request A100, while base evaluation requests L4. GPU actions can incur charges. The Volume stores the pinned worker environment, model cache, checkpoint objects and receipts. To resume a stopped action, run it again with `--resume-stopped` only after confirming the prior function is no longer active. The Modal entrypoint has not been GPU-executed as part of this repository publication; its CPU preflight and Modal CLI validation do not replace an end-to-end Modal run.
 
 ## Reproduction scope
 
 Training uses the frozen GSM8K pool and 128 accepted optimizer updates per arm. The two arms have **different fresh-example coverage**: 512 question slots for Adaptive and 256 for U2. Evaluation defaults to MATH500, one completion per question. The portable release has a new source and storage identity; do not substitute its run IDs for the original Colab receipts. Results from different GPU profiles or token caps should not be presented as a controlled speed test.
 
-Run CPU checks with `python -m pytest` and `python -m ruff check .`. First-party code is [MIT licensed](LICENSE). Upstream datasets, model artifacts and the vendored symbolic grader retain their own terms and attribution; see [data sources](docs/DATA.md) and [third-party notices](licenses). No credentials, trained checkpoints or user-specific Drive objects are committed to this repository.
+Run the CPU preflight above and check source style with `python -m ruff check .`. First-party code is [MIT licensed](LICENSE). Upstream datasets, model artifacts and the vendored symbolic grader retain their own terms and attribution; see [data sources](docs/DATA.md) and [third-party notices](licenses). No credentials, trained checkpoints or user-specific Drive objects are committed to this repository.

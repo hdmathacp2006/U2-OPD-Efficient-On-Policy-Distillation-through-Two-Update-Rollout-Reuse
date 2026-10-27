@@ -22,7 +22,6 @@ SOURCE_DIRECTORIES = (
     "assets",
     "requirements",
     "scripts",
-    "tests",
     "docs",
 )
 
