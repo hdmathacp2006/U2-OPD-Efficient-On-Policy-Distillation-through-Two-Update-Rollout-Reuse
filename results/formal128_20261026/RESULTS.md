@@ -22,10 +22,5 @@ the receipt's `timing_scope` and [timing definitions](../../docs/TIMING.md).
 | Adaptive | 350 / 500 | 70.0% | 2h 17m 08.96s |
 | Original U2 | 345 / 500 | 69.0% | 2h 12m 17.43s |
 
-Correct counts are derived from the reported accuracy and question count.
-Times are `process_seconds_this_invocation`, not training time or isolated GPU
-generation time. Do not infer a training speedup from this table. Paired
-significance and extraction/truncation diagnostics require the actual predictions.
-
 Original completion fields are retained in `methods_user_result.json` and
 `base_user_result.json`. No training or evaluation was launched to save this report.
